@@ -1,4 +1,4 @@
-package a2;
+
 /*
  * @purose:Subclass of Vehicle;Used to draw the railcars
  */
