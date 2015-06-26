@@ -133,7 +133,7 @@ class GamePanel extends JPanel {
                                 //repaint new area
                                 repaint(e.getX() - 15, e.getY() - 15, 31, 31);
                                 tokenFound[i] = true;
-                                System.out.println("Matched.But you only get 0 point because of multiple tries.");
+                                System.out.println("Matched.But you get no points because of multiple tries.");
                                 matched++;
                                 count++;
                                 if(count>9)System.exit(0);
@@ -144,7 +144,7 @@ class GamePanel extends JPanel {
                             else if(tries[i]>2 && ScorePanel.getScore()>0 && !playertoken.comparePattern(tokens.get(i)))
                             {
 
-                                    System.out.println("Not matched. You lose 2 points.");
+                                    System.out.println("Not matched. You lose 1 point.");
                                     int score = ScorePanel.getScore();
                                     score--;
                                     ScorePanel.setScore(score);
